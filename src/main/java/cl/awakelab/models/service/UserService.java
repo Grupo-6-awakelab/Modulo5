@@ -31,10 +31,13 @@ public class UserService {
 	}
 	
 public boolean login(String u, String p) {
-		
-		if (u.equals(username) && p.equals(password)) {
-			return true;
-		}
+		for (User user : userList) {
+			
+			if (user.getUSERNAME().equals(u) && user.getPASSWORD().equals(p)) {
+				return true;
+			}
+			
+		}	
 		
 		return false;
 	}
