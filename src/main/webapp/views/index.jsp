@@ -1,22 +1,28 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bienvenidos</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 
 </head>
 <body>
-<div class="container">
-<jsp:include page="snippet/header.jsp"></jsp:include>
-<jsp:include page="snippet/footer.jsp"></jsp:include>
-</div>
+	<div class="container">
+		<jsp:include page="snippet/header.jsp"></jsp:include>
+
+		<div class="container">
+			<h1>APR</h1>
+		</div>
+		<jsp:include page="snippet/footer.jsp"></jsp:include>
+	</div>
 
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript"
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
