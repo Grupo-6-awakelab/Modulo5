@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+	<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+	
 <!DOCTYPE html>
 <html>
 <head>
@@ -41,6 +43,8 @@
     <div class="row justify-content-center">
     <div class="col-md-8">
         <div class="welcome-box">
+        
+        
             <h1>¡Bienvenidos a nuestra empresa asesora de prevención de riesgos!</h1>
             <p>En nuestra empresa, nos dedicamos a brindar asesoramiento especializado en prevenciÃ³n de riesgos para garantizar la seguridad y bienestar de nuestros clientes. Nuestro objetivo principal es ayudar a las organizaciones a identificar, evaluar y controlar los riesgos presentes en sus actividades, con el fin de prevenir accidentes laborales, proteger la salud de los trabajadores y salvaguardar los activos de la empresa. Gracias por confiar en nosotros y esperamos poder servirle con excelencia en todo lo relacionado con la prevenciÃ³n de riesgos!</p>
             <p>Atentamente, <br> El equipo de la empresa asesora de prevención de riesgos</p>
@@ -52,8 +56,7 @@
 <jsp:include page="snippet/footer.jsp"></jsp:include>
 </div>
 
-
-		s
+		
 
 
 	<script type="text/javascript"
