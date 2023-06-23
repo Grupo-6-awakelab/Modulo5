@@ -12,9 +12,8 @@
 
 </head>
 <body>
-	<div class="container">
-		<jsp:include page="snippet/header.jsp"></jsp:include>
-=======
+	
+		
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 <style>
     .logo {
@@ -42,9 +41,9 @@
     <div class="row justify-content-center">
     <div class="col-md-8">
         <div class="welcome-box">
-            <h1>隆Bienvenidos a nuestra empresa asesora de prevenci贸n de riesgos!</h1>
+            <h1>ienvenidos a nuestra empresa asesora de prevenci髇 de riesgos!</h1>
             <p>En nuestra empresa, nos dedicamos a brindar asesoramiento especializado en prevenci贸n de riesgos para garantizar la seguridad y bienestar de nuestros clientes. Nuestro objetivo principal es ayudar a las organizaciones a identificar, evaluar y controlar los riesgos presentes en sus actividades, con el fin de prevenir accidentes laborales, proteger la salud de los trabajadores y salvaguardar los activos de la empresa. Gracias por confiar en nosotros y esperamos poder servirle con excelencia en todo lo relacionado con la prevenci贸n de riesgos!</p>
-            <p>Atentamente, <br> El equipo de la empresa asesora de prevenci贸n de riesgos</p>
+            <p>Atentamente, <br> El equipo de la empresa asesora de prevenci髇 de riesgos</p>
         </div>
     </div>
 </div>
@@ -54,11 +53,7 @@
 </div>
 
 
-		<div class="container">
-			<h1>APR</h1>
-		</div>
-		<jsp:include page="snippet/footer.jsp"></jsp:include>
-	</div>
+		s
 
 
 	<script type="text/javascript"
