@@ -11,9 +11,9 @@
 </head>
 <body>
 <div class="container">
-<jsp:include page="./header.jsp"></jsp:include>
+<jsp:include page="snippet/header.jsp"></jsp:include>
 <h1>Esta es la página de contacto</h1>
-<jsp:include page="./footer.jsp"></jsp:include>
+<jsp:include page="snippet/footer.jsp"></jsp:include>
 </div>
 
 
