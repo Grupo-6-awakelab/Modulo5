@@ -49,7 +49,7 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                  <h1>En esta pagina se desplegara formulario para crear capacitaciones</h1>
+                  <h1>En esta pagina se desplegara la lista de capacitaciones</h1>
 
                 </div>
                 <!-- /.container-fluid -->
