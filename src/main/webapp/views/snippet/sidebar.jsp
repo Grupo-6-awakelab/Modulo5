@@ -10,16 +10,19 @@
 		class="sidebar-brand d-flex align-items-center justify-content-center"
 		href="index.html">
 		<div class="sidebar-brand-icon rotate-n-15">
-			<i class="fas fa-laugh-wink"></i>
+
 		</div>
 		<div class="sidebar-brand-text mx-3">
-			SB Admin <sup>2</sup>
+		<span class="fs-4"><div class="col-3">
+            <div class="logo">
+                <img src="https://i.ibb.co/DrXTG5q/logo-sidebar-fw.png" alt="Logo corporativo">
+            </div>
+        </div></span> 
 		</div>
-	</a>
 
 	<!-- Divider -->
 	<hr class="sidebar-divider my-0">
-
+	
 	<!-- Nav Item - Dashboard -->
 	<li class="nav-item active"><a class="nav-link" href="dashboard">
 			<i class="fas fa-fw fa-tachometer-alt"></i> <span>Home</span>
@@ -27,7 +30,7 @@
 
 	<!-- Divider -->
 	<hr class="sidebar-divider">
-
+ 
 	<!-- Heading -->
 	<div class="sidebar-heading">Menú</div>
 
