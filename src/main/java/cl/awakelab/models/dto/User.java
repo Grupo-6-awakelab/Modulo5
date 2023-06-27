@@ -5,23 +5,23 @@ public class User {
 	private String name;
 	private String lastName;
 	private String email;
-	private String USERNAME;
-	private String PASSWORD;
+	private String username;
+	private String password;
 	private UserProfile profile;
 	
 	public User() {
 		super();
 	}
 
-	public User(int id, String name, String lastName, String email, String uSERNAME, String pASSWORD,
+	public User(int id, String name, String lastName, String email, String username, String password,
 			UserProfile profile) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.lastName = lastName;
 		this.email = email;
-		USERNAME = uSERNAME;
-		PASSWORD = pASSWORD;
+		this.username = username;
+		this.password = password;
 		this.profile = profile;
 	}
 
@@ -57,20 +57,20 @@ public class User {
 		this.email = email;
 	}
 
-	public String getUSERNAME() {
-		return USERNAME;
+	public String getUsername() {
+		return username;
 	}
 
-	public void setUSERNAME(String uSERNAME) {
-		USERNAME = uSERNAME;
+	public void setUsername(String username) {
+		this.username = username;
 	}
 
-	public String getPASSWORD() {
-		return PASSWORD;
+	public String getPassword() {
+		return password;
 	}
 
-	public void setPASSWORD(String pASSWORD) {
-		PASSWORD = pASSWORD;
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 	public UserProfile getProfile() {
