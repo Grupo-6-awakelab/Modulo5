@@ -6,6 +6,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import cl.awakelab.models.service.CapacitacionService;
 
 /**
  * Servlet implementation class ListarCapacitacion
@@ -13,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/administrarcapacitacion")
 public class AdministrarCapacitacion extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+    private CapacitacionService capacitacionService = new CapacitacionService();
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -27,8 +29,19 @@ public class AdministrarCapacitacion extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		getServletContext().getRequestDispatcher("/views/administrarCapacitacion.jsp").forward(request, response);
+		HttpSession session = request.getSession();
+
+		if (session.getAttribute("isLogged") == null) {
+			response.sendRedirect(request.getContextPath() + "/login");
+		} else {
+			
+			request.setAttribute("capacitaciones", capacitacionService.listAll());	
+			getServletContext().getRequestDispatcher("/views/administrarCapacitacion.jsp").forward(request, response);
+			
+		}
+	
 	}
+	 
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)

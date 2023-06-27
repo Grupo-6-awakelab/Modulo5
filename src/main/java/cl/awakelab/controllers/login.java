@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import cl.awakelab.models.dto.UserProfile;
 import cl.awakelab.models.service.UserService;
 
 @WebServlet("/login")
@@ -32,15 +33,35 @@ public class login extends HttpServlet {
 
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
-
+		String nombre = userService.getNombre(username);
+		UserProfile rol = userService.getRole(username);
 		HttpSession session = request.getSession();
 
-		if (userService.login(username, password)) {
+		if ((userService.login(username, password)!= null) && rol == UserProfile.ADMINISTRATIVO) {
 			session.setAttribute("isLogged", true);
+			session.setAttribute("rol", "admin");
+			session.setAttribute("user", nombre);
 
 			response.sendRedirect(request.getContextPath() + "/dashboard");
+		
+		}
+		else if ((userService.login(username, password)!= null) && rol == UserProfile.CLIENTE) {
+			session.setAttribute("isLogged", true);
+			session.setAttribute("rol", "cliente");
+			session.setAttribute("user", nombre);
 
-		} else {
+			response.sendRedirect(request.getContextPath() + "/dashboard");
+		
+		}
+		else if ((userService.login(username, password)!= null) && rol == UserProfile.PROFESIONAL) {
+			session.setAttribute("isLogged", true);
+			session.setAttribute("rol", "profesional");
+			session.setAttribute("user", nombre);
+
+			response.sendRedirect(request.getContextPath() + "/dashboard");
+		
+		}
+		else {
 
 			session.setAttribute("isLogged", false);
 			getServletContext().getRequestDispatcher("/views/login.jsp").forward(request, response);

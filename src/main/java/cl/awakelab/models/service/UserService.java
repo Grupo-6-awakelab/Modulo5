@@ -27,16 +27,36 @@ public class UserService {
 
 	}
 
-	public boolean login(String u, String p) {
-		for (User user : userList) {
-
-			if (user.getUSERNAME().equals(u) && user.getPASSWORD().equals(p)) {
-				return true;
-			}
-
-		}
-
-		return false;
+	public User login(String username, String password) {
+	    for (User user : userList) {
+	        if (user.getUsername().equals(username) && user.getPassword().equals(password)) {
+	            return user;
+	        }
+	    }
+	    return null;
 	}
+	public UserProfile getRole(String username) {
+	    for (User user : userList) {
+	        if (user.getUsername().equals(username)) {
+	            return user.getProfile();
+	        }
+	    }
+	    return null; 
+	}
+	
+	  public String getNombre(String username) {
+		  for (User user : userList) {
+		        if (user.getUsername().equals(username)) {
+		            return user.getName();
+		        }
+		    }
+		    return null; 
+	    }
+	
+	
+	
 
+
+
+	
 }
