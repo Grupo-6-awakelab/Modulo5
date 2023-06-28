@@ -61,7 +61,7 @@
                                
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small"><c:out value="${user}" /></span>
                                 <img class="img-profile rounded-circle"
-                                    src="img/undraw_profile.svg">
+                                    src="https://cdn.jsdelivr.net/gh/Grupo-6-awakelab/cdnjs@main/userProfile.png">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"

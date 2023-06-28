@@ -20,6 +20,7 @@
             </div>
         </div></span> 
 		</div>
+		</a>
 
 	<!-- Divider -->
 	<hr class="sidebar-divider my-0">

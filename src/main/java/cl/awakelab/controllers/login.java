@@ -24,8 +24,20 @@ public class login extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		HttpSession session = request.getSession();
 
-		getServletContext().getRequestDispatcher("/views/login.jsp").forward(request, response);
+        boolean parametroSesion = false;
+        if (session.getAttribute("isLogged") != null) {
+            parametroSesion = (boolean) session.getAttribute("isLogged");
+            
+        }
+
+        if (parametroSesion) {
+           
+        	response.sendRedirect(request.getContextPath() + "/dashboard");
+        } else {
+        	getServletContext().getRequestDispatcher("/views/login.jsp").forward(request, response);
+        }
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -37,31 +49,28 @@ public class login extends HttpServlet {
 		UserProfile rol = userService.getRole(username);
 		HttpSession session = request.getSession();
 
-		if ((userService.login(username, password)!= null) && rol == UserProfile.ADMINISTRATIVO) {
+		if ((userService.login(username, password) != null) && rol == UserProfile.ADMINISTRATIVO) {
 			session.setAttribute("isLogged", true);
 			session.setAttribute("rol", "admin");
 			session.setAttribute("user", nombre);
 
 			response.sendRedirect(request.getContextPath() + "/dashboard");
-		
-		}
-		else if ((userService.login(username, password)!= null) && rol == UserProfile.CLIENTE) {
+
+		} else if ((userService.login(username, password) != null) && rol == UserProfile.CLIENTE) {
 			session.setAttribute("isLogged", true);
 			session.setAttribute("rol", "cliente");
 			session.setAttribute("user", nombre);
 
 			response.sendRedirect(request.getContextPath() + "/dashboard");
-		
-		}
-		else if ((userService.login(username, password)!= null) && rol == UserProfile.PROFESIONAL) {
+
+		} else if ((userService.login(username, password) != null) && rol == UserProfile.PROFESIONAL) {
 			session.setAttribute("isLogged", true);
 			session.setAttribute("rol", "profesional");
 			session.setAttribute("user", nombre);
 
 			response.sendRedirect(request.getContextPath() + "/dashboard");
-		
-		}
-		else {
+
+		} else {
 
 			session.setAttribute("isLogged", false);
 			getServletContext().getRequestDispatcher("/views/login.jsp").forward(request, response);
