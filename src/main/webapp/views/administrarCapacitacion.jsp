@@ -65,7 +65,7 @@
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Capacitaciones</h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -75,6 +75,7 @@
                                             <th>Id</th>
                                             <th>Nombre</th>
                                             <th>Detalle</th>
+                                            <th>Acciones</th>
                                             
                                         </tr>
                                     </thead>
@@ -86,7 +87,11 @@
 												<td><c:out value="${capacitacion.getId()}"></c:out></td>
 												<td><c:out value="${capacitacion.getName()}"></c:out></td>
 												<td><c:out value="${capacitacion.getDetalle()}"></c:out></td>
-												
+												<td>
+						<a href="${pageContext.request.contextPath}/administrarcapacitacion?a=read&id=${capacitacion.getId()}"><i class="fa-solid fa-book-open"></i></a>
+						<a href="${pageContext.request.contextPath}/administrarcapacitacion?a=edit&id=${capacitacion.getId()}"><i class="fa-solid fa-pen-to-square"></i></a>
+						<a href="${pageContext.request.contextPath}/administrarcapacitacion?a=delete&id=${capacitacion.getId()}"><i class="fa-solid fa-trash-can"></i></a>
+					</td>
 
 											</tr>
 										</c:forEach>
