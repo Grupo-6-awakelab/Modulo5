@@ -11,12 +11,14 @@
 		class="sidebar-brand d-flex align-items-center justify-content-center"
 		href="index.html">
 		<div class="sidebar-brand-icon rotate-n-15">
-
+<div class="logo">
+                <img src="https://i.ibb.co/k9wdR2Y/mono-fw.png" alt="Logo corporativo">
+            </div>
 		</div>
 		<div class="sidebar-brand-text mx-3">
 		<span class="fs-4"><div class="col-3">
             <div class="logo">
-                <img src="https://i.ibb.co/DrXTG5q/logo-sidebar-fw.png" alt="Logo corporativo">
+                <img src="https://i.ibb.co/tx1v275/logo-mono-fw.png" alt="Logo corporativo" width="100">
             </div>
         </div></span> 
 		</div>
@@ -106,13 +108,14 @@
 
 	<!-- Heading -->
 	<div class="sidebar-heading"></div>
-
-
+<!-- Nav Item - Charts -->
+<li class="nav-item"><a class="nav-link" href="#"><i
+			class="fa fa-address-card"></i> <span>Contacto</span></a></li>
 
 	<!-- Nav Item - Charts -->
-	<li class="nav-item"><a class="nav-link" href="charts.html"><i
+	<li class="nav-item"><a class="nav-link" href="#"><i
 			class="fa-solid fa-flag"></i> <span>Reportes</span></a></li>
-
+<i ></i>
 	<!-- Nav Item - Utilities Collapse Menu -->
 	<li class="nav-item"><a class="nav-link collapsed" href="#"
 		data-toggle="collapse" data-target="#collapseFive"
