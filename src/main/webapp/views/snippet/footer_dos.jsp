@@ -4,7 +4,7 @@
 <footer class="sticky-footer bg-white">
 	<div class="container my-auto">
 		<div class="text-center my-auto">
-			<span>Copyright &copy; APR Asesorias en Prevension de Riesgos</span>
+			<span>Copyright &copy; APR Asesorias en Prevención de Riesgos</span>
 		</div>
 	</div>
 </footer>

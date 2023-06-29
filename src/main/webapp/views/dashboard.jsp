@@ -49,7 +49,24 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                  
+                  <div class="row justify-content-center">
+				<div class="col-md-8">
+					<div class="welcome-box">
+
+
+						<center>
+							<h1>¡Bienvenidos al dashboard</h1>
+							<p>Selecciona alguna opción del menu izquierdo</p>
+							<p>
+							<br>
+							<br>
+								Atentamente, <br> El equipo de la empresa asesora de
+								prevención de riesgos
+							</p>
+						</center>
+					</div>
+				</div>
+			</div>
 
                 </div>
                 <!-- /.container-fluid -->

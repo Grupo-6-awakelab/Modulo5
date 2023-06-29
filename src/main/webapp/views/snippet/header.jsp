@@ -52,18 +52,18 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#" style="color: #00a8e8;">Home</a>
+          <a class="nav-link active" aria-current="page" href="./" style="color: #00a8e8;">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" style="color: #00a8e8;">Features</a>
+          <a class="nav-link" href="contacto" style="color: #00a8e8;">Contacto</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="login" style="color: #00a8e8;">Dashboard</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" style="color: #00a8e8;">Pricing</a>
+          <a class="nav-link" href="login" style="color: #00a8e8;">Login</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" style="color: #00a8e8;">Disabled</a>
-        </li>
-      </ul>
+       </ul>
     </div>
   </div>
 </nav>

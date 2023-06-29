@@ -63,8 +63,8 @@
 			aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
 			<div class="bg-white py-2 collapse-inner rounded">
 				<h6 class="collapse-header">Acciones:</h6>
-				<a class="collapse-item" href="utilities-color.html">Crear
-					Usuario</a> <a class="collapse-item" href="utilities-animation.html">Administrar
+				<a class="collapse-item" href="#">Crear
+					Usuario</a> <a class="collapse-item" href="#">Administrar
 					Usuarios</a>
 			</div>
 		</div></li>
@@ -78,8 +78,8 @@
 			aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
 			<div class="bg-white py-2 collapse-inner rounded">
 				<h6 class="collapse-header">Acciones:</h6>
-				<a class="collapse-item" href="utilities-color.html">Crear <a
-					class="collapse-item" href="utilities-animation.html">Administrar
+				<a class="collapse-item" href="#">Crear <a
+					class="collapse-item" href="#">Administrar
 						Asesorias</a>
 			</div>
 		</div></li>
@@ -94,8 +94,8 @@
 			aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
 			<div class="bg-white py-2 collapse-inner rounded">
 				<h6 class="collapse-header">Acciones:</h6>
-				<a class="collapse-item" href="utilities-color.html">Registrar
-					Accidente <a class="collapse-item" href="utilities-animation.html">Administrar
+				<a class="collapse-item" href="#">Registrar
+					Accidente <a class="collapse-item" href="#">Administrar
 						Accidentes</a>
 			</div>
 		</div></li>
@@ -125,8 +125,8 @@
 			aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
 			<div class="bg-white py-2 collapse-inner rounded">
 				<h6 class="collapse-header">Acciones:</h6>
-				<a class="collapse-item" href="utilities-color.html">Registrar
-					Pagos<a class="collapse-item" href="utilities-animation.html">Listar
+				<a class="collapse-item" href="#">Registrar
+					Pagos<a class="collapse-item" href="#">Listar
 						Pagos</a>
 			</div>
 		</div></li>
