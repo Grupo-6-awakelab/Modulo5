@@ -55,7 +55,7 @@
           <a class="nav-link active" aria-current="page" href="./" style="color: #00a8e8;">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contacto" style="color: #00a8e8;">Contacto</a>
+          <a class="nav-link" href="consulta" style="color: #00a8e8;">Contacto</a>
         </li>
          <li class="nav-item">
           <a class="nav-link" href="login" style="color: #00a8e8;">Dashboard</a>
