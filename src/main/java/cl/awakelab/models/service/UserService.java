@@ -12,7 +12,7 @@ public class UserService {
 
 	public UserService() {
 
-		userList.add(new User(1, "Juan", "Perez", "admin@xxx.xx", "admin", "admin", UserProfile.ADMINISTRATIVO));
+		userList.add(new User(1, "Juan", "Perez", "admin@xxx.xx", "admin", "1234", UserProfile.ADMINISTRATIVO));
 		userList.add(new User(2, "Pedro", "Rodriguez", "pedro@xxx.xx", "pedro", "pedro", UserProfile.CLIENTE));
 		userList.add(new User(3, "Diego", "Rojas", "diego@xxx.xx", "diego", "diego", UserProfile.PROFESIONAL));
 	}

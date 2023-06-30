@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 
 <!DOCTYPE html>
@@ -54,34 +54,68 @@
 
 				<!-- Begin Page Content -->
 				<div class="container-fluid">
-
-					<h1>Crear Capacitación</h1>
-
-					<div class="card mb-4">
-						<div class="card-header">Rellene el formulario para crear
-							una nueva capacitación</div>
-						<div class="card-body">
-							<form>
-								<div class="form-group">
-									<div class="form-group">
-										<label for="nombre">Nombre</label> <input type="text"
-											class="form-control" id="nombre"
-											placeholder="Nombre de la capacitación">
-									</div>
-								</div>
-
-								<div class="form-group">
-									<label for="nombre">Detalle de la capacitación</label>
-									<textarea class="form-control" id="detalle" rows="3"></textarea>
-								</div>
-							</form>
-							<button type="submit" class="btn btn-primary">Submit</button>
-						</div>
+					<c:if test="${action == 'delete'}">
+						<h6>La capacitacion ha sido eliminada correctamente</h6>
 						
-						 
-					</div>
+							<div class="row pt-4">
+								<div class="col">
+									<a href="administrarcapacitacion" class="btn btn-secondary">Volver</a>
+								</div></div>
+					</c:if>
+					
+					<c:if test="${action != 'delete'}">
+						<form class="form" action="capacitacion" method="POST">
+
+
+
+							<div class="row">
+								<div class="col">
+
+									<label class="form-label" for="lastName">Nombre
+										capacitacion:</label>
+									<c:if test="${action == 'read'}">
+										<input class="form-control" type="text"
+											value="${capacitacion.getName()}" id="name" name="name"
+											disabled>
+									</c:if>
+									<c:if test="${action == 'edit'}">
+										<input class="form-control" type="text"
+											value="${capacitacion.getName()}" id="name" name="name">
+									</c:if>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col">
+									<label class="form-label" for="address">Detalle
+										capacitacion:</label>
+									<c:if test="${action == 'read'}">
+										<textarea class="form-control" id="detalle" name="detalle"
+											rows="3" disabled>${capacitacion.getDetalle()}</textarea>
+									</c:if>
+									<c:if test="${action == 'edit'}">
+										<textarea class="form-control" id="detalle" name="detalle"
+											rows="3">${capacitacion.getDetalle()}</textarea>
+									</c:if>
+
+								</div>
+							</div>
+
+							<div class="row pt-4">
+								<div class="col">
+									<a href="administrarcapacitacion" class="btn btn-secondary">Volver</a>
+								</div>
+								<div class="col">
+									<c:if test="${action == 'edit'}">
+										<button type="submit" class="btn btn-primary">Guardar</button>
+									</c:if>
+								</div>
+							</div>
+						</form>
+					</c:if>
 
 				</div>
+				
 				<!-- /.container-fluid -->
 
 			</div>
@@ -124,6 +158,7 @@
 			</div>
 		</div>
 	</div>
+
 	<!-- Bootstrap core JavaScript-->
 	<script
 		src="https://startbootstrap.github.io/startbootstrap-sb-admin-2/vendor/jquery/jquery.min.js"></script>
