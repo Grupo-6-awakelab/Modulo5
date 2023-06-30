@@ -15,7 +15,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>SB Admin 2 - Dashboard</title>
+<title>APR - Dashboard</title>
 
 <!-- Custom fonts for this template-->
 <link rel="stylesheet"
@@ -127,9 +127,9 @@
 			</div>
 			<!-- End of Main Content -->
 
-			<!-- Footer -->
-			<jsp:include page="snippet/footer.jsp"></jsp:include>
-			<!-- End of Footer -->
+			    <!-- Footer -->
+             <jsp:include page="snippet/footer_dos.jsp"></jsp:include>
+            <!-- End of Footer -->
 
 		</div>
 		<!-- End of Content Wrapper -->
