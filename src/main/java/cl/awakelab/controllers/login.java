@@ -54,21 +54,21 @@ public class login extends HttpServlet {
 			session.setAttribute("rol", "admin");
 			session.setAttribute("user", nombre);
 
-			response.sendRedirect(request.getContextPath() + "/dashboard");
+			response.sendRedirect(request.getContextPath() + "/contacto");
 
 		} else if ((userService.login(username, password) != null) && rol == UserProfile.CLIENTE) {
 			session.setAttribute("isLogged", true);
 			session.setAttribute("rol", "cliente");
 			session.setAttribute("user", nombre);
 
-			response.sendRedirect(request.getContextPath() + "/dashboard");
+			response.sendRedirect(request.getContextPath() + "/contacto");
 
 		} else if ((userService.login(username, password) != null) && rol == UserProfile.PROFESIONAL) {
 			session.setAttribute("isLogged", true);
 			session.setAttribute("rol", "profesional");
 			session.setAttribute("user", nombre);
 
-			response.sendRedirect(request.getContextPath() + "/dashboard");
+			response.sendRedirect(request.getContextPath() + "/contacto");
 
 		} else {
 
