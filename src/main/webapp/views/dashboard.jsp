@@ -59,6 +59,7 @@
 							<p>Selecciona alguna opción del menu izquierdo</p>
 							<p>
 							<br>
+							<img src="https://i.ibb.co/pyBnNvZ/person-fw.png"></img>
 							<br>
 								Atentamente, <br> El equipo de la empresa asesora de
 								prevención de riesgos
