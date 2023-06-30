@@ -56,7 +56,11 @@ public class AdministrarCapacitacion extends HttpServlet {
 	                request.setAttribute("action", "edit");
 	                break;
 	            case "delete":
-	                // Realiza las operaciones de eliminación necesarias
+	            	 request.setAttribute("action", "delete");
+	            	capacitacionService.Delete(id);
+	            	request.setAttribute("capacitaciones", capacitacionService.listAll());
+	    	       
+	                
 	                break;
 	            default:
 	                break;

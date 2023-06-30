@@ -29,4 +29,8 @@ public class CapacitacionService {
 		return list.stream().filter(s -> s.getId() == id).findFirst().orElse(null);
 
 	}
+	
+	public void Delete(int id) {
+		list.removeIf(s -> s.getId() == id);
+	}
 }
