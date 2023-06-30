@@ -111,7 +111,7 @@
 	<!-- Heading -->
 	<div class="sidebar-heading"></div>
 <!-- Nav Item - Charts -->
-<li class="nav-item"><a class="nav-link" href="#"><i
+<li class="nav-item"><a class="nav-link" href="contacto"><i
 			class="fa fa-address-card"></i> <span>Contacto</span></a></li>
 
 	<!-- Nav Item - Charts -->
