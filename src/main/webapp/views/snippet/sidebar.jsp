@@ -80,8 +80,8 @@
 			aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
 			<div class="bg-white py-2 collapse-inner rounded">
 				<h6 class="collapse-header">Acciones:</h6>
-				<a class="collapse-item" href="#">Crear <a
-					class="collapse-item" href="#">Administrar
+				<a class="collapse-item" href="crearasesoria">Crear <a
+					class="collapse-item" href="administrarasesoria">Administrar
 						Asesorias</a>
 			</div>
 		</div></li>
@@ -96,13 +96,29 @@
 			aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
 			<div class="bg-white py-2 collapse-inner rounded">
 				<h6 class="collapse-header">Acciones:</h6>
-				<a class="collapse-item" href="#">Registrar
-					Accidente <a class="collapse-item" href="#">Administrar
+				<a class="collapse-item" href="registraraccidente">Registrar
+					Accidente <a class="collapse-item" href="administraraccidente">Administrar
 						Accidentes</a>
 			</div>
 		</div></li>
 
-
+	<!-- Divider -->
+	<hr class="sidebar-divider">
+<!-- Nav Item - Utilities Collapse Menu -->
+	<li class="nav-item"><a class="nav-link collapsed" href="#"
+		data-toggle="collapse" data-target="#collapseFive"
+		aria-expanded="true" aria-controls="collapseFive"><i
+			class="fa fa-plane"></i> <span>Visitas</span>
+	</a>
+		<div id="collapseFive" class="collapse"
+			aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+			<div class="bg-white py-2 collapse-inner rounded">
+				<h6 class="collapse-header">Acciones:</h6>
+				<a class="collapse-item" href="#">Registrar
+					Visitas <a class="collapse-item" href="#">Administrar
+						Visitas</a>
+			</div>
+		</div></li>
 
 
 	<!-- Divider -->
@@ -115,15 +131,29 @@
 			class="fa fa-address-card"></i> <span>Contacto</span></a></li>
 
 	<!-- Nav Item - Charts -->
+	<li class="nav-item"><a class="nav-link collapsed" href="#"
+		data-toggle="collapse" data-target="#collapseSeven"
+		aria-expanded="true" aria-controls="collapseSeven"><i
+			class="fa-solid fa-money-bill"></i> <span>Chequeos</span> </a>
+		<div id="collapseSeven" class="collapse"
+			aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+			<div class="bg-white py-2 collapse-inner rounded">
+				<h6 class="collapse-header">Acciones:</h6>
+				<a class="collapse-item" href="#">Registrar
+					Pagos<a class="collapse-item" href="#">Listar
+						Pagos</a>
+			</div>
+		</div></li>
+	
 	<li class="nav-item"><a class="nav-link" href="#"><i
 			class="fa-solid fa-flag"></i> <span>Reportes</span></a></li>
 <i ></i>
 	<!-- Nav Item - Utilities Collapse Menu -->
 	<li class="nav-item"><a class="nav-link collapsed" href="#"
-		data-toggle="collapse" data-target="#collapseFive"
-		aria-expanded="true" aria-controls="collapseFive"><i
+		data-toggle="collapse" data-target="#collapseSix"
+		aria-expanded="true" aria-controls="collapseSix"><i
 			class="fa-solid fa-money-bill"></i> <span>Pagos</span> </a>
-		<div id="collapseFive" class="collapse"
+		<div id="collapseSix" class="collapse"
 			aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
 			<div class="bg-white py-2 collapse-inner rounded">
 				<h6 class="collapse-header">Acciones:</h6>
