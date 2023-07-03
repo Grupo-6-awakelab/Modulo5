@@ -38,7 +38,7 @@
   <!--
       <ul class="nav nav-pills">
         <li class="nav-item"><a href="./" class="nav-link active" aria-current="page">Inicio</a></li>
-        <li class="nav-item" ><a href="contacto" class="nav-link">Contacto</a></li>
+        <li class="nav-item" ><a href="consulta" class="nav-link">Contacto</a></li>
         <li class="nav-item" ><a href="login"  class="nav-link">Login</a></li>
       </ul>
        -->
