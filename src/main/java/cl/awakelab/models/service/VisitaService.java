@@ -1,40 +1,29 @@
-package cl.awakelab.models.service;
 
-import java.util.List;
-
-import cl.awakelab.models.dao.IVisita;
+import cl.awakelab.models.dao.VisitaDAO;
 import cl.awakelab.models.dto.Visita;
 
-public class VisitaService implements IVisita{
-
-	@Override
-	public void create(Visita a) {
-		// TODO Auto-generated method stub
-		
+public class VisitaService {
+	
+	private VisitaDAO visitaDAO = new VisitaDAO();
+	
+	public List<Visita> findAll() {
+		return visitaDAO.read();
 	}
-
-	@Override
-	public List<Visita> read() {
-		// TODO Auto-generated method stub
-		return null;
+	
+	public Visita findOne(int id) {
+		return visitaDAO.read(id);
 	}
-
-	@Override
-	public Visita read(int id) {
-		// TODO Auto-generated method stub
-		return null;
+	
+	public void update(Visita visita) {
+		visitaDAO.update(visita);
 	}
-
-	@Override
-	public void update(Visita a) {
-		// TODO Auto-generated method stub
-		
+	
+	public void create(Visita visita) {
+		visitaDAO.create(visita);
 	}
-
-	@Override
+	
 	public void delete(int id) {
-		// TODO Auto-generated method stub
-		
+		visitaDAO.delete(id);
 	}
 
 }

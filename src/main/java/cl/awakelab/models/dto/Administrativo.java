@@ -9,14 +9,16 @@ public class Administrativo {
 	private String apellido;
 	private String correo;
 	private String area;
-	private int usuario_id;
+	private int usuarioId;
 	
 public Administrativo() {
 	
 }
 
 
+
 public Administrativo(int id, String run, String nombre, String apellido, String correo, String area, int usuario_id) {
+
 	super();
 	this.id = id;
 	this.run = run;
@@ -24,7 +26,7 @@ public Administrativo(int id, String run, String nombre, String apellido, String
 	this.apellido = apellido;
 	this.correo = correo;
 	this.area = area;
-	this.usuario_id = usuario_id;
+	this.usuarioId = usuarioId;
 }
 
 
@@ -86,20 +88,13 @@ public void setArea(String area) {
 	this.area = area;
 }
 
-public int getUsuario_id() {
-	return usuario_id;
+public int getUsuarioId() {
+	return usuarioId;
 }
 
-public void setUsuario_id(int usuario_id) {
-	this.usuario_id = usuario_id;
+public void setUsuarioId(int usuarioId) {
+	this.usuarioId = usuarioId;
 }
-
-@Override
-public String toString() {
-	return "Administrativo [id=" + id + ", run=" + run + ", nombre=" + nombre + ", apellido=" + apellido + ", correo="
-			+ correo + ", area=" + area + ", usuario_id=" + usuario_id + "]";
-}
-
 
 
 }
