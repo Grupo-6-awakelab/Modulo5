@@ -102,8 +102,6 @@
 			</div>
 		</div></li>
 
-	<!-- Divider -->
-	<hr class="sidebar-divider">
 <!-- Nav Item - Utilities Collapse Menu -->
 	<li class="nav-item"><a class="nav-link collapsed" href="#"
 		data-toggle="collapse" data-target="#collapseFive"
@@ -114,8 +112,8 @@
 			aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
 			<div class="bg-white py-2 collapse-inner rounded">
 				<h6 class="collapse-header">Acciones:</h6>
-				<a class="collapse-item" href="#">Registrar
-					Visitas <a class="collapse-item" href="#">Administrar
+				<a class="collapse-item" href="crearvisitas">Registrar
+					Visitas <a class="collapse-item" href="administrarvisita">Administrar
 						Visitas</a>
 			</div>
 		</div></li>
@@ -140,8 +138,8 @@
 			<div class="bg-white py-2 collapse-inner rounded">
 				<h6 class="collapse-header">Acciones:</h6>
 				<a class="collapse-item" href="#">Registrar
-					Pagos<a class="collapse-item" href="#">Listar
-						Pagos</a>
+					Chequeos<a class="collapse-item" href="#">Listar
+						Chequeos</a>
 			</div>
 		</div></li>
 	

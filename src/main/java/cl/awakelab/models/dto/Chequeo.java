@@ -1,38 +1,36 @@
 package cl.awakelab.models.dto;
 
 public class Chequeo {
-	
-	private int id;
-	private int visita_id;
-	private String detalle;
-	private ChequeoEstado estado;
-	
-	public Chequeo() {
-		
+    private int id;
+    private int visitaId;
+    private String detalle;
+    private String estado;
+
+    public Chequeo() {
+    }
+
+    public Chequeo(int id, int visitaId, String detalle, String estado) {
+        this.id = id;
+        this.visitaId = visitaId;
+        this.detalle = detalle;
+        this.estado = estado;
+    }
+
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+	public int getVisitaId() {
+		return visitaId;
 	}
 
-	public Chequeo(int id, int visita_id, String detalle, ChequeoEstado estado) {
-		super();
-		this.id = id;
-		this.visita_id = visita_id;
-		this.detalle = detalle;
-		this.estado = estado;
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
-
-	public int getVisita_id() {
-		return visita_id;
-	}
-
-	public void setVisita_id(int visita_id) {
-		this.visita_id = visita_id;
+	public void setVisitaId(int visitaId) {
+		this.visitaId = visitaId;
 	}
 
 	public String getDetalle() {
@@ -43,19 +41,14 @@ public class Chequeo {
 		this.detalle = detalle;
 	}
 
-	public ChequeoEstado getEstado() {
+	public String getEstado() {
 		return estado;
 	}
 
-	public void setEstado(ChequeoEstado estado) {
+	public void setEstado(String estado) {
 		this.estado = estado;
 	}
 
-	@Override
-	public String toString() {
-		return "Chequeo [id=" + id + ", visita_id=" + visita_id + ", detalle=" + detalle + ", estado=" + estado + "]";
-	}
-	
-	
 
-}
+
+ }
