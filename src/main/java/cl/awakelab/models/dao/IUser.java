@@ -2,13 +2,13 @@ package cl.awakelab.models.dao;
 
 import java.util.List;
 
-import cl.awakelab.models.dto.User;
+import cl.awakelab.models.dto.Usuario;
 
 	public interface IUser {
-		public void create(User a);
-		public List<User> read();
-		public User read(int id);
-		public void update(User a);
+		public void create(Usuario a);
+		public List<Usuario> read();
+		public Usuario read(int id);
+		public void update(Usuario a);
 		public void delete(int id);
 
 	}

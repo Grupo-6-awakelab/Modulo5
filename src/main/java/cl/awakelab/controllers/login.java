@@ -9,13 +9,13 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import cl.awakelab.models.dto.UserProfile;
-import cl.awakelab.models.service.UserService;
+import cl.awakelab.models.service.UsuarioService;
 
 @WebServlet("/login")
 public class login extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	private UserService userService = new UserService();
+	private UsuarioService userService = new UsuarioService();
 
 	public login() {
 		super();
@@ -45,36 +45,20 @@ public class login extends HttpServlet {
 
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
-		String nombre = userService.getNombre(username);
-		UserProfile rol = userService.getRole(username);
+		String usuarioRol = userService.getRol(username);
+		String nombreReal = userService.getName(username);
 		HttpSession session = request.getSession();
 
-		if ((userService.login(username, password) != null) && rol == UserProfile.ADMINISTRATIVO) {
-			session.setAttribute("isLogged", true);
-			session.setAttribute("rol", "admin");
-			session.setAttribute("user", nombre);
-
-			response.sendRedirect(request.getContextPath() + "/dashboard");
-
-		} else if ((userService.login(username, password) != null) && rol == UserProfile.CLIENTE) {
-			session.setAttribute("isLogged", true);
-			session.setAttribute("rol", "cliente");
-			session.setAttribute("user", nombre);
-
-			response.sendRedirect(request.getContextPath() + "/dashboard");
-
-		} else if ((userService.login(username, password) != null) && rol == UserProfile.PROFESIONAL) {
-			session.setAttribute("isLogged", true);
-			session.setAttribute("rol", "profesional");
-			session.setAttribute("user", nombre);
-
-			response.sendRedirect(request.getContextPath() + "/dashboard");
-
+		if (userService.login(username, password)) {
+		    session.setAttribute("isLogged", true);
+		    session.setAttribute("nombre", nombreReal);
+		    response.sendRedirect(request.getContextPath() + "/dashboard");
 		} else {
+		    session.setAttribute("isLogged", false);
+		    getServletContext().getRequestDispatcher("/views/login.jsp").forward(request, response);
 
-			session.setAttribute("isLogged", false);
-			getServletContext().getRequestDispatcher("/views/login.jsp").forward(request, response);
 		}
 
 	}
 }
+

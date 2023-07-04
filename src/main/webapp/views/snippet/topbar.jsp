@@ -62,7 +62,7 @@
 			role="button" data-toggle="dropdown" aria-haspopup="true"
 			aria-expanded="false"> <span
 				class="mr-2 d-none d-lg-inline text-gray-600 small"><c:out
-						value="${user}" /></span> <img class="img-profile rounded-circle"
+						value="${nombre}" /></span> <img class="img-profile rounded-circle"
 				src="https://cdn.jsdelivr.net/gh/Grupo-6-awakelab/cdnjs@main/userProfile.png">
 		</a> <!-- Dropdown - User Information -->
 			<div
