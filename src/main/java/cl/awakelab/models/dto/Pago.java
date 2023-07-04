@@ -1,63 +1,55 @@
 package cl.awakelab.models.dto;
 
+import java.math.BigDecimal;
 import java.sql.Date;
 
 public class Pago {
 	private int id;
-	private int cliente_id;
-	private double monto;
-	private Date fecha_pago;
+	private int clienteId;
+	private BigDecimal monto;
+	private Date fechaPago;
 
-public Pago() {
-	
-}
+	public Pago() {
+	}
 
-public Pago(int id, int cliente_id, double monto, Date fecha_pago) {
-	super();
-	this.id = id;
-	this.cliente_id = cliente_id;
-	this.monto = monto;
-	this.fecha_pago = fecha_pago;
-}
+	public Pago(int id, int clienteId, BigDecimal monto, Date fechaPago) {
+		this.id = id;
+		this.clienteId = clienteId;
+		this.monto = monto;
+		this.fechaPago = fechaPago;
+	}
 
-public int getId() {
-	return id;
-}
+	public int getId() {
+		return id;
+	}
 
-public void setId(int id) {
-	this.id = id;
-}
+	public void setId(int id) {
+		this.id = id;
+	}
 
-public int getCliente_id() {
-	return cliente_id;
-}
+	public int getClienteId() {
+		return clienteId;
+	}
 
-public void setCliente_id(int cliente_id) {
-	this.cliente_id = cliente_id;
-}
+	public void setClienteId(int clienteId) {
+		this.clienteId = clienteId;
+	}
 
-public double getMonto() {
-	return monto;
-}
+	public BigDecimal getMonto() {
+		return monto;
+	}
 
-public void setMonto(double monto) {
-	this.monto = monto;
-}
+	public void setMonto(BigDecimal monto) {
+		this.monto = monto;
+	}
 
-public Date getFecha_pago() {
-	return fecha_pago;
-}
+	public Date getFechaPago() {
+		return fechaPago;
+	}
 
-public void setFecha_pago(Date fecha_pago) {
-	this.fecha_pago = fecha_pago;
-}
+	public void setFechaPago(Date fechaPago) {
+		this.fechaPago = fechaPago;
+	}
 
-@Override
-public String toString() {
-	return "Pago [id=" + id + ", cliente_id=" + cliente_id + ", monto=" + monto + ", fecha_pago=" + fecha_pago + "]";
-}
-
-
-	
 	
 }

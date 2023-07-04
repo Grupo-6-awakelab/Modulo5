@@ -102,7 +102,7 @@
 
 											<tr>
 												<td><c:out value="${accidente.getId()}"></c:out></td>
-												<td><c:out value="${accidente.getFecha_accidente()}"></c:out></td>
+												<td><c:out value="${accidente.getFechaAccidente()}"></c:out></td>
 												<td><c:out value="${accidente.getDetalle()}"></c:out></td>
 												<td><a
 													href="${pageContext.request.contextPath}/administraraccidente?a=read&id=${accidente.getId()}"><i

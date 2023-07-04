@@ -1,6 +1,4 @@
-package cl.awakelab.models.service;
 
-import java.util.List;
 import cl.awakelab.models.dao.VisitaDAO;
 import cl.awakelab.models.dto.Visita;
 
@@ -27,4 +25,5 @@ public class VisitaService {
 	public void delete(int id) {
 		visitaDAO.delete(id);
 	}
+
 }

@@ -15,7 +15,10 @@ public Administrativo() {
 	
 }
 
-public Administrativo(int id, String run, String nombre, String apellido, String correo, String area, int usuarioId) {
+
+
+public Administrativo(int id, String run, String nombre, String apellido, String correo, String area, int usuario_id) {
+
 	super();
 	this.id = id;
 	this.run = run;
@@ -24,6 +27,17 @@ public Administrativo(int id, String run, String nombre, String apellido, String
 	this.correo = correo;
 	this.area = area;
 	this.usuarioId = usuarioId;
+}
+
+
+public Administrativo(String run, String nombre, String apellido, String correo, String area, int usuario_id) {
+	super();
+	this.run = run;
+	this.nombre = nombre;
+	this.apellido = apellido;
+	this.correo = correo;
+	this.area = area;
+	this.usuario_id = usuario_id;
 }
 
 public int getId() {

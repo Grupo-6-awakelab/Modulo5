@@ -3,66 +3,54 @@ package cl.awakelab.models.dto;
 import java.sql.Date;
 
 public class Accidente {
-	
-	private int id; 
-	private int cliente_id; 
-	private Date fecha_accidente; 
+
+	private int id;
+	private int clienteId;
+	private Date fechaAccidente;
 	private String detalle;
-	
-public Accidente() {
-	
-}
 
-public Accidente(int id, int cliente_id, Date fecha_accidente, String detalle) {
-	super();
-	this.id = id;
-	this.cliente_id = cliente_id;
-	this.fecha_accidente = fecha_accidente;
-	this.detalle = detalle;
-}
+	public Accidente() {
 
-public int getId() {
-	return id;
-}
+	}
 
-public void setId(int id) {
-	this.id = id;
-}
+	public Accidente(int id, int clienteId, Date fechaAccidente, String detalle) {
+		super();
+		this.id = id;
+		this.clienteId = clienteId;
+		this.fechaAccidente = fechaAccidente;
+		this.detalle = detalle;
+	}
 
-public int getCliente_id() {
-	return cliente_id;
-}
+	public int getId() {
+		return id;
+	}
 
-public void setCliente_id(int cliente_id) {
-	this.cliente_id = cliente_id;
-}
+	public void setId(int id) {
+		this.id = id;
+	}
 
-public Date getFecha_accidente() {
-	return fecha_accidente;
-}
+	public int getClienteId() {
+		return clienteId;
+	}
 
-public void setFecha_accidente(Date fecha_accidente) {
-	this.fecha_accidente = fecha_accidente;
-}
+	public void setClienteId(int clienteId) {
+		this.clienteId = clienteId;
+	}
 
-public String getDetalle() {
-	return detalle;
-}
+	public Date getFechaAccidente() {
+		return fechaAccidente;
+	}
 
-public void setDetalle(String detalle) {
-	this.detalle = detalle;
-}
+	public void setFechaAccidente(Date fechaAccidente) {
+		this.fechaAccidente = fechaAccidente;
+	}
 
-@Override
-public String toString() {
-	return "Accidente [id=" + id + ", cliente_id=" + cliente_id + ", fecha_accidente=" + fecha_accidente + ", detalle="
-			+ detalle + "]";
-}
-	
+	public String getDetalle() {
+		return detalle;
+	}
 
-	
-	
-	
-	
+	public void setDetalle(String detalle) {
+		this.detalle = detalle;
+	}
 
 }

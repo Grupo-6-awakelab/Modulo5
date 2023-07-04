@@ -4,8 +4,8 @@ public class Asesoria {
 	private int id; 
 	private String nombre;  
 	private String detalle; 
-	private int profesional_id;
-	private int cliente_id;
+	private int profesionalId;
+	private int clienteId;
 
 
 public Asesoria() {
@@ -13,14 +13,16 @@ public Asesoria() {
 }
 
 
-public Asesoria(int id, String nombre, String detalle, int profesional_id, int cliente_id) {
+
+public Asesoria(int id, String nombre, String detalle, int profesionalId, int clienteId) {
 	super();
 	this.id = id;
 	this.nombre = nombre;
 	this.detalle = detalle;
-	this.profesional_id = profesional_id;
-	this.cliente_id = cliente_id;
+	this.profesionalId = profesionalId;
+	this.clienteId = clienteId;
 }
+
 
 
 public int getId() {
@@ -53,31 +55,25 @@ public void setDetalle(String detalle) {
 }
 
 
-public int getProfesional_id() {
-	return profesional_id;
+public int getProfesionalId() {
+	return profesionalId;
 }
 
 
-public void setProfesional_id(int profesional_id) {
-	this.profesional_id = profesional_id;
+public void setProfesionalId(int profesionalId) {
+	this.profesionalId = profesionalId;
 }
 
 
-public int getCliente_id() {
-	return cliente_id;
+public int getClienteId() {
+	return clienteId;
 }
 
 
-public void setCliente_id(int cliente_id) {
-	this.cliente_id = cliente_id;
+public void setClienteId(int clienteId) {
+	this.clienteId = clienteId;
 }
 
-
-@Override
-public String toString() {
-	return "Asesoria [id=" + id + ", nombre=" + nombre + ", detalle=" + detalle + ", profesional_id=" + profesional_id
-			+ ", cliente_id=" + cliente_id + "]";
-}
 
 
 

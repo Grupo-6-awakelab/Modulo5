@@ -54,7 +54,7 @@
 		</div></li>
 
 	<!-- Nav Item - Utilities Collapse Menu -->
-	<c:if test="${sessionScope.rol == 'Admin'}">
+
 	<li class="nav-item"><a class="nav-link collapsed" href="#"
 		data-toggle="collapse" data-target="#collapseUtilities"
 		aria-expanded="true" aria-controls="collapseUtilities"><i
@@ -70,7 +70,7 @@
 					Usuarios</a>
 			</div>
 		</div></li>
-</c:if>
+
 	<!-- Nav Item - Utilities Collapse Menu -->
 	<li class="nav-item"><a class="nav-link collapsed" href="#"
 		data-toggle="collapse" data-target="#collapsethree"
